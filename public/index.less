@@ -1,0 +1,245 @@
+@import "common/common.css";
+@import "common/pagenav.css";
+@import "libs/dpl.css";
+/* 适配所有PC浏览器 */
+.header, .content, .footer{
+  width: 960px;
+  margin: 0 auto;
+}
+/* 宽度大于960的高级浏览器 */
+@media screen and (min-width:960px){
+  .header, .content, .footer{
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .small-select{
+    width: 130px;
+  }
+}
+/* 宽度小于960的高级浏览器 */
+@media screen and (max-width: 959px){
+  .header, .content, .footer{
+    width: 100%;
+  }
+
+  .filter-pad{
+    li{
+      display: block!important;
+    }
+  }
+}
+/* 宽度小于480的高级浏览器 */
+@media screen and (max-width: 479px){
+  .header-logo{
+    text-align: center!important;
+  }
+
+  .hot{
+    display: none;
+  }
+
+  .filter-form{
+    font-size: 14px!important;
+
+    .pannel{
+      .show-custom{
+        label{
+          display: block;
+        }
+      }
+    }
+
+    .radio-tab{
+      label{
+        padding: 10px 0;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  select{
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+.header{
+  .header-login{
+    text-align: right;
+    background: #fdfcfc;
+    padding: 5px 10px;
+  }
+
+  .header-logo{
+    height: 60px;
+    border-bottom: 1px solid #CC5A18;
+    background: #fa8723;
+    background: -moz-linear-gradient(top, #fa8723 0, #f57614 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fa8723), color-stop(100%, #f57614));
+    background: -webkit-linear-gradient(top, #fa8723 0, #f57614 100%);
+    background: -o-linear-gradient(top, #fa8723 0, #f57614 100%);
+    background: -ms-linear-gradient(top, #fa8723 0, #f57614 100%);
+    background: linear-gradient(to bottom, #fa8723 0, #f57614 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa8723', endColorstr='#f57614', GradientType=0);
+
+    .logo{
+      height: 60px;
+      line-height: 60px;
+      font-size: 26px;
+      padding-left: 30px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .logo-label{
+      font-size: 18px;
+      color: #b85509;
+      padding-left: 10px;
+    }
+  }
+}
+
+.content{
+  color: #2c2c2c;
+  background-color: #fdfcfc;
+  min-height: 500px;
+
+    .operation{
+        vertical-align: middle;
+        padding: 10px;
+        background: #eceff1;
+        border-bottom: solid 1px #dddddd;
+        font-size: 13px;
+
+      .btn{
+        margin-bottom: 10px;
+        border: 1px solid #E0791F;
+        background: #FFA460;
+        background: -moz-linear-gradient(top , #FFA460, #FF7D44);
+        background: -webkit-linear-gradient(top , #FFA460, #FF7D44);
+        background: linear-gradient(top , #FFA460, #FF7D44);
+        color: #FFF;
+        width: 60px;
+          font-size: 14px;
+          padding: 5px 10px;
+      }
+        label{
+            margin-right: 30px;
+        }
+    }
+
+  .list{
+
+    table{
+      width: 100%;
+
+      th, td{
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      thead{
+        color: #969696;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        border-bottom: solid 1px #dddddd;
+
+        th{
+          height: 30px;
+        }
+      }
+
+      tbody{
+        font-size: 14px;
+
+        tr{
+          border-bottom: solid 1px #dddddd;
+        }
+
+        tr:hover{
+          background: #dbeef5;
+        }
+
+        td{
+          height: 40px;
+        }
+
+        .rank{
+          width: 10%;
+          span{
+            width: 24px;
+            text-align: center;
+            display: inline-block;
+            height: 33px;
+          }
+
+          .top1{
+            background: url("../common/imgs/topword.png") 0 -50px no-repeat;
+          }
+
+          .top2{
+            background: url("../common/imgs/topword.png") 0 -100px no-repeat;
+          }
+
+          .top3{
+            background: url("../common/imgs/topword.png") 0 -150px no-repeat;
+          }
+
+        }
+
+        .word{
+          padding: 5px 0;
+        }
+
+        .freq{
+          width: 20%;
+          word-break: break-all;
+        }
+
+        .hot{
+          width: 20%;
+
+          p{
+            width: 125px;
+            margin: 0 auto;
+            height: 12px;
+            background: url('../common/imgs/topword.png') no-repeat 0 -12px;
+
+            span{
+              display: block;
+              height: 12px;
+              background: url('../common/imgs/topword.png') no-repeat 0 0;
+            }
+          }
+        }
+
+        .edit{
+            color: #dddddd;
+            font-size: 13px;
+
+            a:hover{
+                color: #000000;
+                cursor: pointer;
+            }
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  border-top: 1px dashed #CCC;
+  padding-top: 10px;
+  padding-bottom: 30px;
+
+  span{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 7px 0 9px;
+    color: #b0b0b0;
+    text-align: center;
+  }
+}

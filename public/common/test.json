@@ -1,0 +1,65 @@
+{
+"status": 0,
+"total" :11,
+"data":{
+    "books":[
+        {
+            "index":1,
+            "name":"犀牛书",
+            "owner":"晴舞",
+            "state":"在架可借",
+            "borrower":"-",
+            "time":"2014-6-7 12:00"
+        },
+
+        {
+            "index":1,
+            "name":"犀牛书",
+            "owner":"晴舞",
+            "state":"在架可借",
+            "borrower":"-",
+            "time":"2014-6-7 12:00"
+        },
+        {
+            "index":1,
+            "name":"犀牛书",
+            "owner":"晴舞",
+            "state":"在架可借",
+            "borrower":"-",
+            "time":"2014-6-7 12:00"
+        },
+        {
+            "index":1,
+            "name":"犀牛书",
+            "owner":"晴舞",
+            "state":"在架可借",
+            "borrower":"-",
+            "time":"2014-6-7 12:00"
+        },
+        {
+            "index":1,
+            "name":"犀牛书",
+            "owner":"晴舞",
+            "state":"在架可借",
+            "borrower":"-",
+            "time":"2014-6-7 12:00"
+        },
+        {
+            "index":1,
+            "name":"犀牛书",
+            "owner":"晴舞",
+            "state":"在架可借",
+            "borrower":"-",
+            "time":"2014-6-7 12:00"
+        },
+        {
+            "index":1,
+            "name":"犀牛书",
+            "owner":"晴舞",
+            "state":"在架可借",
+            "borrower":"-",
+            "time":"2014-6-7 12:00"
+        }
+    ]
+    }
+}

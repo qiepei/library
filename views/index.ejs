@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图书漂流岛</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="false" name="twcClient" id="twcClient" />
+    <link rel="apple-touch-icon-precomposed" href="http://a.tbcdn.cn/mw/s/hi/tbtouch/images/touch-icon.png" />
+
+    <script src="/libs/seed.js"></script>
+
+    <script type="text/javascript">KISSY.Config.debug = true;</script>
+    <script type="text/javascript" src="/config.js"></script>
+
+    <link href="/index.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="header">
+    <!--    <div class="header-login">
+            <div>登录</div>
+        </div>-->
+    <div class="header-logo">
+        <span class="logo">图书漂流岛</span>
+        <span class="logo-label"> 挑一本看看 </span>
+    </div>
+</div>
+<div class="content">
+    <div class="tip" id="showTip"></div>
+    <div class="operation edit-area">
+        <a class="btn" id="addBook">添加</a>
+        <form class="hidden" id="addForm">
+            <label>
+                书名
+                <input type="text" id="bookName"/>
+            </label>
+            <label>
+                贡献者
+                <input type="text" id="owner"/>
+            </label>
+            <label>
+                状态
+                <select id="status">
+                    <option value="新建">新建</option>
+                    <option value="借出">借出</option>
+                    <option value="下架">下架</option>
+                </select>
+            </label>
+            <label>
+                借阅者
+                <input type="text" id="borrower"/>
+            </label>
+            <a class="btn" id="submitAdd">提交</a>
+            <a class="btn hidden" id="submitUpdata">更新</a>
+        </form>
+    </div>
+    <div class="list">
+        <table>
+            <thead>
+            <tr>
+                <th class="index">序号</th>
+                <th class="name">书名</th>
+                <th class="owner">贡献者</th>
+                <th class="status">状态</th>
+                <th class="borrower">借阅者</th>
+                <th class="time">上次状态更改时间</th>
+                <th class="edit">操作</th>
+            </tr>
+            </thead>
+            <tbody id="listWrapper">
+            </tbody>
+        </table>
+    </div>
+    <div id="pageWrapper" class="createPage">
+    </div>
+    <div id="errorArea"></div>
+</div>
+
+<div class="footer">
+    <span>© 2014 Taobao.com 版权所有</span>
+</div>
+
+<script type="text/juicer" id="J_ListTpl">
+{@each books as item,index}
+    <tr>
+        <td class="index">
+            ${index}
+        </td>
+        <td class="name">${item.name|changeCode}</td>
+        <td class="owner">${item.owner|changeCode}</td>
+        <td class="status">${item.status|changeCode}</td>
+        <td class="borrower">${item.borrower|changeCode}</td>
+        <td class="time">${item.time|changeCode}</td>
+        <td class="edit" data-id="${item._id}">
+            <a >修改</a>
+        </td>
+    </tr>
+{@/each}
+</script>
+<script>
+    KISSY.use("/index",function(S, List){
+        new List().router();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+@import "../../libs/reset.css";
+@import "../../libs/base.css";
+
+.trip-btn{
+  display: inline-block;
+  min-width: 60px;
+  height: 30px;
+  padding: 0 15px;
+  border: 0;
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 16px;
+  letter-spacing: 1px;
+  -webkit-appearance: none!important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.trip-btn-blue {
+  background: #1885EE;
+  color: #FFF;
+  background: -webkit-gradient(linear,0 0,0 100%,color-stop(0,#66BBF2),color-stop(1,#56AEF0));
+  background: -webkit-gradient(linear,0 0,0 100%,from(#66BBF2),to(#56AEF0));
+  text-shadow: 0 1px 0 #428DC9;
+  border-bottom: 2px solid #428DC9;
+}
+.trip-btn-blue:active {
+  background: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #4fa8e0), color-stop(1, #4398da));
+  -webkit-appearance: none !important;
+}
+
+select{
+  width: 200px;
+  font-size: 13px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px 0;
+  width: 130px\9;
+}
+
+
+.hidden{
+  display: none;
+}
+
+.trip-loading{
+  background: none;
+}
+.trip-loading:after{
+  background: transparent url("imgs/loading-25-25.png") no-repeat scroll center;
+  background-size: 21px 22px;
+  -webkit-background-size: 21px 22px;
+}
+
+.tip{
+  background: #fcf8e3;
+  border: #faebcc solid 1px;
+  text-align: center;
+  color: #8a6d3b;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+/* 通用错误提示哭脸 */
+
+.common-error-status {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+  color: #7E919F;
+  padding-top: 155px;
+  background: url('imgs/error-65-65.png') no-repeat center 70px;
+  background-size: 65px 65px;
+  -webkit-background-size: 65px 65px;
+}
+
+/* 通用错误提示的刷新按钮 */
+
+.refresh-button {
+  background-color: #fff;
+  height: 29px;
+  line-height: 29px;
+  border: 1px solid #dee4ec;
+  border-radius: 2px;
+  width: 75px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
